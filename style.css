@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: blueviolet;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 20px; /* Add padding to ensure space for the content */
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding in width and height calculations */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Needed for absolute positioning inside */
+    overflow: hidden; /* Ensure content doesn't overflow outside the border radius */
+}
+
+.date {
+    font-size: 100px;
+    margin: 0;
+    color: black; /* Adjust color for visibility if needed */
+}
+
+.month {
+    color: white;
+    background-color: red;
+    margin: 0; /* Remove margin to eliminate any extra space */
+    position: absolute; /* Position absolutely to cover the container */
+    top: 0; /* Align to the top of the container */
+    left: 0; /* Align to the left of the container */
+    right: 0; /* Align to the right of the container */
+    height: 60px; /* Adjust height to fit well within the container and leave space for the date */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: bold; /* Optional: make the text bold */
+    display: flex; /* Center text inside the month */
+    align-items: center; /* Vertically center text */
+    justify-content: center; /* Horizontally center text */
+    border-top-left-radius: 10px; /* Apply rounded corners to match container */
+    border-top-right-radius: 10px;
+}
+.gray{
+    color: gray;
+}
